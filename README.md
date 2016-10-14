@@ -13,6 +13,7 @@ This project contains Java examples to produce/consume messages into and from Ka
 ```
 $ docker run --name kafkaapp -p 2181:2181 -p 9092:9092 --env ADVERTISED_HOST=localhost --env ADVERTISED_PORT=9092 spotify/kafka:latest &
 ```
+
 3. Build project using Maven
 
 4. Run `io.tuhin.vertx.http.StreamingServer` class. This run Streaming server to accept stream of values from client. This will also submit the input stream to Kafka topic.
