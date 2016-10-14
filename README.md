@@ -2,25 +2,27 @@
 
 This project contains Java examples to produce/consume messages into and from Kafka topic.
 
-## To run the examples
 
-1. Install **Docker Kafka Image**
+
+## Install **Docker Kafka Image**
 
  I am using __spotify/kafka__ image from Docker Hub. The benefit of using this is that both Kafka and ZooKeeper are available in the same image.
 
-2. Run Kafka on local
+### Run Kafka on local
 
 ```
 $ docker run --name kafkaapp -p 2181:2181 -p 9092:9092 --env ADVERTISED_HOST=localhost --env ADVERTISED_PORT=9092 spotify/kafka:latest &
 ```
 
-3. Build project using Maven
+## To run the examples
 
-4. Run `io.tuhin.vertx.http.StreamingServer` class. This run Streaming server to accept stream of values from client. This will also submit the input stream to Kafka topic.
+1. Build project using Maven
 
-5. Run `io.tuhin.vertx.http.StreamingClient` class. This is a `Vertx.io` streaming client that reads a file and sends HTTP stream to `Vertx.io` server. 
+2. Run `io.tuhin.vertx.http.StreamingServer` class. This run Streaming server to accept stream of values from client. This will also submit the input stream to Kafka topic.
 
-6. Run `io.tuhin.kafka.simpleconsumer.KafkaStreamConsumer` from command prompt so that you could start/stop the Kafka Consumer.
+3. Run `io.tuhin.vertx.http.StreamingClient` class. This is a `Vertx.io` streaming client that reads a file and sends HTTP stream to `Vertx.io` server. 
+
+4. Run `io.tuhin.kafka.simpleconsumer.KafkaStreamConsumer` from command prompt so that you could start/stop the Kafka Consumer.
 
 ```
 java -jar vertx-stream-examples-0.0.1-SNAPSHOT-jar-with-dependencies.jar
