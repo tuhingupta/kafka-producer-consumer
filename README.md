@@ -6,7 +6,7 @@ This project contains Java examples to produce/consume messages into and from Ka
 
 1. Install **Docker Kafka Image**
 
-I am using __spotify/kafka__ image from Docker Hub. The benefit of using this is that both Kafka and ZooKeeper are available in the same image.
+ I am using __spotify/kafka__ image from Docker Hub. The benefit of using this is that both Kafka and ZooKeeper are available in the same image.
 
 2. Run Kafka on local
 
